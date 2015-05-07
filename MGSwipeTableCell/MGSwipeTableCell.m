@@ -1030,9 +1030,9 @@ typedef struct MGSwipeAnimationData {
     
     if (gestureRecognizer == _panRecognizer) {
         
-        if (self.isEditing) {
-            return NO; //do not swipe while editing table
-        }
+        // if (self.isEditing) {
+        //     return NO; //do not swipe while editing table
+        // }
         
         CGPoint translation = [_panRecognizer translationInView:self];
         if (fabs(translation.y) > fabs(translation.x)) {
